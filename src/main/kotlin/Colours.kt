@@ -23,18 +23,26 @@ class Colours {
     }
 
     fun coloursInAplhabeticOrder() : List<List<String>> {
-        //TODO return the colours in alphabetical order
+
         return listOf(colours.sortedByDescending { it })
     }
 
     fun coloursInAllCapitals() : List<String>{
         //TODO return the colours in ALL CAPS
-        return listOf("this should return colours in all capitals")
+        return listOf(colours.toString().uppercase())
     }
 
     fun coloursStartingWithLetter(letter: Char) : List<String>{
         //TODO return the colours starting with the letter passed as a parameter
-        return listOf("this should return colours that start with ${letter}")
+        var word1:List<String> = listOf()
+        for(i:Int in 0..colours.size-1){
+            var word:String = colours[i]
+            if(word.startsWith(letter)){
+                 word1 = listOf(word)
+            }
+        }
+
+        return word1
     }
 
     fun coloursWithSpecificNumberOfChars(size: Int) : List<String>{
