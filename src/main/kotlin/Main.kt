@@ -19,35 +19,35 @@ fun main(args: Array<String>){
     //TODO Use String templates i.e. ${} to insert the method calls into the actual println string.
     //TODO tidy up the printing layout so that it is neat and has a nicer UI - you can choose what you would like to do
     //     here, maybe add breaks, lines, tabs, dividers, etc, whatever you think for making it nicer / easier to read.
-    print("The list is: ")
-    println(colours.getAll())
+    print("The list is: ${colours.getAll()}")
 
-    print("The List has ___ elements stored")
-    println(colours.numberOfColours())
 
-    print("___ is the first colour in the list")
-    println(colours.firstColour())
+    print("The List has ${colours.numberOfColours()} elements stored")
 
-    print("___ is the last colour in the list")
-    print(colours.lastColour())
 
-    println("Sorted list is: ")
-    print(colours.coloursInAplhabeticOrder())
+    print("${colours.firstColour()} is the first colour in the list")
 
-    print("CAPITALISED list is:")
-    print(colours.coloursInAllCapitals())
 
-    println("Colours starting with specific letter ___ [ B was chosen ]")
-    print(colours.coloursStartingWithLetter('B'))
+    print("${colours.lastColour()} is the last colour in the list")
 
-    print("Colours with a specific number of chars ___ [ 6 was chosen]")
-    println(colours.coloursWithSpecificNumberOfChars(6))
 
-    println("___ have less than less 6 chars ")
-    print (colours.coloursWithLessCharsThan(6))
+    println("Sorted list is: ${colours.coloursInAplhabeticOrder()}")
 
-    println("True or false, is blue in the list: ")
-    print(colours.isColourInTheList("blue"))
+
+    print("CAPITALISED list is: ${colours.coloursInAllCapitals()}")
+
+
+    println("Colours starting with specific letter ${colours.coloursStartingWithLetter('B')} [ B was chosen ]")
+
+
+    print("Colours with a specific number of chars ${colours.coloursWithSpecificNumberOfChars(6)} [ 6 was chosen]")
+
+
+    println("${colours.coloursWithLessCharsThan(6)} have less than less 6 chars ")
+
+
+    println("True or false, is blue in the list: ${colours.isColourInTheList("blue")}")
+
 
     println("The list of colours, each printed on a new line is:")
     //TODO Write Code here (below this comment) to print the list in this format:
