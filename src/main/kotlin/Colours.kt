@@ -4,12 +4,12 @@ class Colours {
 
     fun getAll (): List<String>{
         //TODO return the colours list
-        return listOf("this should return the colours list")
+        return listOf(colours.toString())
     }
 
     fun numberOfColours (): Int{
         //TODO return the size of the colours list
-        return 0
+        return colours.size
     }
 
     fun firstColour() : String{
