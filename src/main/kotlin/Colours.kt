@@ -46,13 +46,26 @@ class Colours {
     }
 
     fun coloursWithSpecificNumberOfChars(size: Int) : List<String>{
-        //TODO return the colours that have exactly the same number of chars as the number passed as a parameter
-        return listOf("this should return colours that have ${size} chars")
+
+        var word:List<String> = listOf()
+
+        for(i:Int in 0..colours.size-1){
+            if(colours[i].length == size){
+              word+= colours[i]
+            }
+        }
+        return word
     }
 
     fun coloursWithLessCharsThan(size: Int) : List<String>{
         //TODO return the colours that have less chars than the number passed as s parameter
-        return listOf("this should return colours less than ${size} chars")
+        var listofwords = listOf<String>()
+        colours.forEach{ word ->
+            if(word.length < size){
+                 listofwords+=word
+            }
+        }
+        return listofwords
     }
 
     fun isColourInTheList(colour : String) : Boolean{
