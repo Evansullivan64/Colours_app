@@ -19,35 +19,35 @@ fun main(args: Array<String>){
     //TODO Use String templates i.e. ${} to insert the method calls into the actual println string.
     //TODO tidy up the printing layout so that it is neat and has a nicer UI - you can choose what you would like to do
     //     here, maybe add breaks, lines, tabs, dividers, etc, whatever you think for making it nicer / easier to read.
-    print("The list is: ${colours.getAll()}")
+    println("The list is: ${colours.getAll()}")
+println();
 
+    println("The List has ${colours.numberOfColours()} elements stored")
+    println();
 
-    print("The List has ${colours.numberOfColours()} elements stored")
+    println("${colours.firstColour()} is the first colour in the list")
+    println();
 
-
-    print("${colours.firstColour()} is the first colour in the list")
-
-
-    print("${colours.lastColour()} is the last colour in the list")
-
+    println("${colours.lastColour()} is the last colour in the list")
+    println();
 
     println("Sorted list is: ${colours.coloursInAplhabeticOrder()}")
+    println();
 
-
-    print("CAPITALISED list is: ${colours.coloursInAllCapitals()}")
-
+    println("CAPITALISED list is: ${colours.coloursInAllCapitals()}")
+    println();
 
     println("Colours starting with specific letter ${colours.coloursStartingWithLetter('B')} [ B was chosen ]")
+    println();
 
-
-    print("Colours with a specific number of chars ${colours.coloursWithSpecificNumberOfChars(6)} [ 6 was chosen]")
-
+    println("Colours with a specific number of chars ${colours.coloursWithSpecificNumberOfChars(6)} [ 6 was chosen]")
+    println();
 
     println("${colours.coloursWithLessCharsThan(6)} have less than less 6 chars ")
-
+    println();
 
     println("True or false, is blue in the list: ${colours.isColourInTheList("blue")}")
-
+    println();
 
     println("The list of colours, each printed on a new line is:")
     //TODO Write Code here (below this comment) to print the list in this format:

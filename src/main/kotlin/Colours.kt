@@ -3,28 +3,28 @@ class Colours {
     private val colours = listOf("Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet", "Black", "Silver")
 
     fun getAll (): List<String>{
-        //TODO return the colours list
+
         return listOf(colours.toString())
     }
 
     fun numberOfColours (): Int{
-        //TODO return the size of the colours list
+
         return colours.size
     }
 
     fun firstColour() : String{
-        //TODO return the first colour in the list
+
         return colours[0]
     }
 
     fun lastColour() : String{
-        //TODO return the last colour list
-        return "this should return the last colour in the list"
+
+        return colours[colours.size-1]
     }
 
-    fun coloursInAplhabeticOrder() : List<String>{
+    fun coloursInAplhabeticOrder() : List<List<String>> {
         //TODO return the colours in alphabetical order
-        return listOf("this should return colours in alphabetic order")
+        return listOf(colours.sortedByDescending { it })
     }
 
     fun coloursInAllCapitals() : List<String>{
