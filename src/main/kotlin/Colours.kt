@@ -91,4 +91,8 @@ class Colours {
         return listOf(colours[position])
     }
 
+    fun reversethelist(): List<String> {
+       return colours.asReversed()
+    }
+
 }

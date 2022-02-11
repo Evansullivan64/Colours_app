@@ -59,4 +59,7 @@ println();
 
     //TODO for the three additional functions you wrote in Colours.kt, print the returned value here.
 println("colour in index 2 is: ${colours.returnthecolour(2)}")
+    println()
+
+    println("the reversed order of colours is: ${colours.reversethelist()}")
 }
