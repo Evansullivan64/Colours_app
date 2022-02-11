@@ -54,8 +54,9 @@ println();
    for(i:Int in 0..colours.numberOfColours()-1){
        println("Colour: ${colours.returnthecolour(i)}")
    }
+    println()
 
 
     //TODO for the three additional functions you wrote in Colours.kt, print the returned value here.
-
+println("colour in index 2 is: ${colours.returnthecolour(2)}")
 }
