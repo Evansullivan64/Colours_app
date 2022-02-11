@@ -32,6 +32,7 @@ class Colours {
         return listOf(colours.toString().uppercase())
     }
 
+
     fun coloursStartingWithLetter(letter: Char) : List<String>{
 
         var word1:List<String> = listOf()
@@ -71,10 +72,23 @@ class Colours {
     fun isColourInTheList(colour : String) : Boolean{
         //TODO return true of the colour passed as a parameter is in the list and false otherwise
         // Note: the search should be case insensitive - if blue is passed as a parameter it should find Blue, BLUE etc.
-        return false
+        var ans:Boolean = false
+        for(i:Int in 0..colours.size-1){
+            if(colours[i].equals(colour)){
+                ans = true
+            }else {
+                ans == false
+            }
+        }
+
+        return ans
     }
 
     //TODO Write THREE additional functions of your choice that will perform some sort of
     // analysis on the colours list.
+
+    fun returnthecolour(position: Int): List<String> {
+        return listOf(colours[position])
+    }
 
 }

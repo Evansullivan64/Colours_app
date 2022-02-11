@@ -50,11 +50,11 @@ println();
     println();
 
     println("The list of colours, each printed on a new line is:")
-    //TODO Write Code here (below this comment) to print the list in this format:
-    //    Colour: Red
-    //    Colour: Orange
-    //    ...
-    //    Colour: Silver
+    var colour = ""
+   for(i:Int in 0..colours.numberOfColours()-1){
+       println("Colour: ${colours.returnthecolour(i)}")
+   }
+
 
     //TODO for the three additional functions you wrote in Colours.kt, print the returned value here.
 
