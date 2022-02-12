@@ -1,3 +1,7 @@
+
+import java.util.*
+
+
 class Colours {
 
     private val colours = listOf("Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet", "Black", "Silver")
@@ -22,9 +26,11 @@ class Colours {
         return colours[colours.size-1]
     }
 
-    fun coloursInAplhabeticOrder() : List<List<String>> {
+    fun coloursInAplhabeticOrder() : List<String> {
 
-        return listOf(colours.sortedByDescending { it })
+        val order = colours.sortedBy { it }
+        return order
+
     }
 
     fun coloursInAllCapitals() : List<String>{
@@ -59,7 +65,7 @@ class Colours {
     }
 
     fun coloursWithLessCharsThan(size: Int) : List<String>{
-        //TODO return the colours that have less chars than the number passed as s parameter
+
         var listofwords = listOf<String>()
         colours.forEach{ word ->
             if(word.length < size){
@@ -70,8 +76,6 @@ class Colours {
     }
 
     fun isColourInTheList(colour : String) : Boolean{
-        //TODO return true of the colour passed as a parameter is in the list and false otherwise
-        // Note: the search should be case insensitive - if blue is passed as a parameter it should find Blue, BLUE etc.
         var ans:Boolean = false
         for(i:Int in 0..colours.size-1){
             if(colours[i].equals(colour)){
@@ -94,5 +98,18 @@ class Colours {
     fun reversethelist(): List<String> {
        return colours.asReversed()
     }
+
+    fun coloursWithmoreCharsThan(size: Int) : List<String>{
+
+        var listofwords = listOf<String>()
+        colours.forEach{ word ->
+            if(word.length > size){
+                listofwords+=word
+            }
+        }
+        return listofwords
+    }
+
+
 
 }
